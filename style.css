@@ -480,14 +480,25 @@
     padding-bottom: 20px;
   }
   
-    .pay {
-    margin: 20px auto;      /* centers horizontally */
-    text-align: center;     /* centers text inside */
+   .pay {
+    margin: 20px auto;       /* equal left + right margins */
+    padding: 20px;
+    max-width: 70%;          /* takes up most of the screen but leaves some breathing space */
+    text-align: center;
+    box-sizing: border-box;  /* ensures padding is included in width */
+  }
+
+  .pay img {
+    display: block;
+    margin: 0 auto px;
+    justify-content: start;     /* center images inside */
   }
 
   .opay {
-    justify-content: center;  /* center the image + name */
+    display: flex;
+    justify-content: center; /* centers avatar + name */
     align-items: center;
+    gap: 10px;
   }
   .loop {
     background-size: contain;
@@ -496,39 +507,33 @@
    .phone {
     padding-left: -400px;
   }
+  
    .get h2 {
     text-align: center;
-    margin-bottom: 20px;   /* reduce gap */
+    margin: 20px 0;
+    padding-left: 0;     /* remove the desktop offset */
   }
 
   .float {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: column; /* stack items */
+    align-items: center;    /* center them */
     margin: 0 auto;
+    padding: 0;             /* remove extra left padding */
   }
 
   .contact {
-    display: block;        /* remove forced flex center */
-    height: auto;          /* remove the big vertical gap */
-    margin: 0 auto;        /* center horizontally */
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
     text-align: center;
+    padding: 0;             /* remove extra left padding */
   }
 
   .contact form {
-    width: 90%;            /* make responsive */
-    max-width: 400px;      /* keep form neat */
+    width: 90%;
+    max-width: 400px;
     margin: 0 auto;
-  }
-
-  .float {
-    display: block;
-   
-    justify-content: center;
-  }
-  .get h2 {
-    text-align: center;
-    
   }
   .get form input {
   padding: 8px 2px;

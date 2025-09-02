@@ -143,7 +143,7 @@
 }
 .palm {
   display: flex;
-  padding-left: 30px;
+  padding-left: 0px;
   gap: 30px;
 }
 #testimonials h2 {
@@ -530,10 +530,9 @@
     padding: 0;             /* remove extra left padding */
   }
 
-  .contact form {
-    width: 90%;
-    max-width: 400px;
-    margin: 0 auto;
+   .contact form {
+    max-width: 100%;  /* full width on mobile */
+    padding: 0 15px;  /* add spacing left & right */
   }
   .get form input {
   padding: 8px 2px;
@@ -646,7 +645,44 @@
   padding: 50px; 
   
 }
+.contact form {
+  max-width: 400px;   /* limit form width */
+  margin: 0 auto;     /* center it */
+}
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  box-sizing: border-box;
+  outline: none;
+  transition: border 0.3s ease;
+}
 
+/* Highlight when focused */
+.contact input:focus,
+.contact textarea:focus {
+  border: 1px solid black;
+}
+/* Button styling */
+.contact button {
+  width: 100%;
+  padding: 12px;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact button:hover {
+  background: #444;
+}
 
 
 

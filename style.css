@@ -154,6 +154,7 @@
   
   #plan {
     background-color: #f1f1f1;
+    padding-right: 20px;
   }
   .plan .bot {
     padding-bottom: 30px;
@@ -217,6 +218,7 @@
   }
   .abt {
     padding-left: 20px;
+    padding-right: 20px;
   }
   .abt h3{
     text-align: center;
@@ -477,6 +479,7 @@
     padding-top: 30px;
     padding-bottom: 20px;
   }
+  
     .pay {
     margin: 20px auto;      /* centers horizontally */
     text-align: center;     /* centers text inside */
@@ -493,20 +496,30 @@
    .phone {
     padding-left: -400px;
   }
-   .contact {
-  display: flex;
-  justify-content: center;  /* Horizontal center */
-  align-items: center;      /* Vertical center */
-  height: 80vh;            /* Full screen height */
-}
+   .get h2 {
+    text-align: center;
+    margin-bottom: 20px;   /* reduce gap */
+  }
 
-.contact form {
-  width: 400px;             /* Optional */
-  padding: 20px;
-  background: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
+  .float {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+
+  .contact {
+    display: block;        /* remove forced flex center */
+    height: auto;          /* remove the big vertical gap */
+    margin: 0 auto;        /* center horizontally */
+    text-align: center;
+  }
+
+  .contact form {
+    width: 90%;            /* make responsive */
+    max-width: 400px;      /* keep form neat */
+    margin: 0 auto;
+  }
 
   .float {
     display: block;
@@ -547,6 +560,7 @@
   }
   .deport {
     display: block;
+    margin-top: -120px;
   }
   .deport h2 {
     padding-top: 20px;
@@ -589,6 +603,7 @@
  .icon {
     display: flex;
     flex-wrap: wrap;
+    padding-left: 0px;
     justify-content: center;   /* centers horizontally */
     align-items: center;       /* centers vertically if needed */
     text-align: center;        /* makes text inside divs centered */

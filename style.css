@@ -3,6 +3,17 @@
     overflow-x: hidden;
   }
   /* Hero section */
+  html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+.rope img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+
+}
   .hero {
     height:100vh;
     background: url('./background.jpg') no-repeat center/cover;
@@ -331,7 +342,7 @@
   line-height: 1.6;     
 }
 .pay {
-  max-width: 200px;
+  max-width: 300px;
   background-color: #f1f1f1;
   padding: 20px;
   margin-top: 50px;
@@ -465,6 +476,15 @@
    .quick {
     padding-top: 30px;
     padding-bottom: 20px;
+  }
+    .pay {
+    margin: 20px auto;      /* centers horizontally */
+    text-align: center;     /* centers text inside */
+  }
+
+  .opay {
+    justify-content: center;  /* center the image + name */
+    align-items: center;
   }
   .loop {
     background-size: contain;
@@ -606,7 +626,6 @@
   padding: 50px; 
   
 }
-
 
 
 

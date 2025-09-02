@@ -566,12 +566,16 @@
     max-width: 280px;  
   }
 
-  .icon {
+ .icon {
     display: flex;
     flex-wrap: wrap;
-    padding-right: 20px;
-    padding-left: 20px;
-   
+    justify-content: center;   /* centers horizontally */
+    align-items: center;       /* centers vertically if needed */
+    text-align: center;        /* makes text inside divs centered */
+  }
+
+  .icon > div {
+    margin: 10px auto;         /* centers each box in the row */
   }
   .its {
     display: block;
@@ -602,6 +606,7 @@
   padding: 50px; 
   
 }
+
 
 
 
